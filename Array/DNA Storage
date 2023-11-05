@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	  Scanner sc = new Scanner(System.in);
+	  int t = sc.nextInt();
+	  for(int i=0;i<t;i++)
+	  {
+	   int n = sc.nextInt();
+	   String S = sc.next();
+	   String a="";
+	   for(int j=0;j<n;j=j+2)
+	   {
+	    if(S.charAt(j)=='0' && S.charAt(j+1)=='0' )
+	     a = a + 'A';
+	    if(S.charAt(j)=='0' && S.charAt(j+1)=='1' )
+	     a = a + 'T';
+	    if(S.charAt(j)=='1' && S.charAt(j+1)=='0' )
+	     a = a + 'C';
+	    if(S.charAt(j)=='1' && S.charAt(j+1)=='1' )
+	     a = a + 'G';
+	   }
+	   System.out.println(a);
+	  }
+	}
+}
